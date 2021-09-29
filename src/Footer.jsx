@@ -1,9 +1,9 @@
-const Footer = () => {
+const footer = () => {
     return ( 
         <footer>
-            <p>&copy; Copyright 2021 - Ignacio Nicolás Curto</p>
+            <p style={{color: "white", fontFamily:"'Roboto', sans-serif", marginTop:"6rem"}}>&copy; Copyright 2021 - Ignacio Nicolás Curto</p>
         </footer> 
     );
 }
 
-export default Footer;
+export default footer;

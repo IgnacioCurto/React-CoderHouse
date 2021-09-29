@@ -1,21 +1,25 @@
-
+import logo from '../img/logo.png';
 
 const NavBar = () => {
     return ( 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-sm bg-light text-dark">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                <a href=""><img src={logo} alt="logo" width="50rem" /></a>
+                <li class="nav-item ml-2 mt-2">
+                    <a class="nav-link text-dark" href="#" style={{fontFamily:"'Lato', sans-serif", fontWeight:"400"}}>Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Hardware</a>
+                <li class="nav-item mt-2">
+                    <a class="nav-link text-dark" href="#" style={{fontFamily:"'Lato', sans-serif", fontWeight:"400"}}>Hardware</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pre-built</a>
+                <li class="nav-item mt-2">
+                    <a class="nav-link text-dark" href="#" style={{fontFamily:"'Lato', sans-serif", fontWeight:"400"}}>Pre-built</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Build your own</a>
+                <li class="nav-item mt-2">
+                    <a class="nav-link text-dark" href="#" style={{fontFamily:"'Lato', sans-serif", fontWeight:"400"}}>Build your own</a>
                 </li>
+                <div class="nav-item mt-3">
+                    <a class="" href="#" style={{color: "grey"}}><span class="material-icons">shopping_cart</span></a>
+                </div>
             </ul>
         </nav>
     );
