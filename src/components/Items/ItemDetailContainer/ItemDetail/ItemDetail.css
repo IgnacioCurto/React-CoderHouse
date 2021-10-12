@@ -1,0 +1,130 @@
+.productDetail {
+  display: flex;
+  padding-bottom: 5em;
+}
+
+.productDetail h4 {
+  color: #ff8037;
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.productDetail img {
+  border-radius: 15px;
+  height: 30em;
+  margin-left: 10em;
+}
+
+.productDetail h1 {
+  text-align: left;
+  font-weight: 800;
+  font-size: 2em;
+  color: #dfdfdf;
+}
+
+.prodinfo {
+  width: 40%;
+  margin-left: 5em;
+}
+
+.prodinfo h5 {
+  font-size: 1.5em;
+  margin-left: 15px;
+  font-weight: 400;
+  color: #ffac7c;
+}
+
+.prodinfo a {
+  text-decoration: none;
+}
+
+.prodinfo .pricediv {
+  align-items: left !important;
+}
+.prodinfo .pricediv img {
+  margin-left: 0 !important;
+}
+
+.buydiv{
+  margin-top: 2em;
+  display: flex;
+}
+
+.buydiv span{
+  color: #ececec;
+  font-size: 2.5em;
+  margin-left: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: .3s ease;
+}
+.buydiv span:hover{
+  cursor: pointer;
+  color: #ff8989;
+}
+
+.buyBtn{
+  color: rgb(17, 17, 17);
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  padding: 0.8em;
+  border:none;
+  border-radius: 25px;
+  background-color: #ffac7c;
+}
+
+.buyBtn:hover{
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffac7c;
+}
+/*mobile  */
+@media screen and (max-width: 640px) {
+  .productDetail {
+    flex-flow: column wrap;
+  }
+
+  .productDetail img {
+    margin-left: 0;
+    width: inherit;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .prodinfo {
+    width: inherit !important;
+    margin-left: 0;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+/*tablet  */
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+  .productDetail {
+    flex-flow: column wrap;
+  }
+
+  .productDetail img {
+    margin-left: 0;
+    width: inherit;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .pricediv img {
+    padding: 0 !important;
+  }
+
+  .prodinfo {
+    width: inherit !important;
+    margin-left: 0;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
