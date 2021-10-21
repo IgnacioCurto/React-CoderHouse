@@ -24,7 +24,6 @@
   font-size: 2em;
   color: #dfdfdf;
 }
-
 .prodinfo {
   width: 40%;
   margin-left: 5em;
@@ -48,41 +47,60 @@
   margin-left: 0 !important;
 }
 
-.buydiv{
-  margin-top: 2em;
+.stockContainer {
   display: flex;
+  align-items: center;
+  margin-top: 2em;
 }
 
-.buydiv span{
-  color: #ececec;
-  font-size: 2.5em;
-  margin-left: 1em;
-  margin-top: auto;
-  margin-bottom: auto;
-  transition: .3s ease;
-}
-.buydiv span:hover{
+.addCartButton {
+  background-color: #ff8037;
+  border: none !important;
+  border-radius: 28px;
   cursor: pointer;
-  color: #ff8989;
+  color: #ffffff;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 3.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 3em;
 }
 
-.buyBtn{
-  color: rgb(17, 17, 17);
-  font-size: 1.3em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
-  padding: 0.8em;
-  border:none;
-  border-radius: 25px;
-  background-color: #ffac7c;
+.purchaseButton {
+  border: #ff8037 1px solid;
+  border-radius: 28px;
+  cursor: pointer;
+  color: #ff8037;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-.buyBtn:hover{
+.backButton {
+  border: none;
+  border-radius: 28px;
   cursor: pointer;
   color: white;
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #ffac7c;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 1em;
 }
+
 /*mobile  */
 @media screen and (max-width: 640px) {
   .productDetail {

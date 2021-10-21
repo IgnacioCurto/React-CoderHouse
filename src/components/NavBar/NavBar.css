@@ -33,11 +33,11 @@
   font-style: normal;
   margin-left: 1.3em;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .navLinks a:hover {
   color: #ff8037;
-  transition: 0.5s;
   cursor: pointer;
 }
 

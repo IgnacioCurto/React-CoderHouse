@@ -3,3 +3,15 @@
     justify-content: center;
     margin-top: 5em;
 }
+
+/*mobile  */
+@media screen and (max-width: 640px){
+    
+
+}
+
+/*tablet  */
+@media screen and (min-width:640px) and (max-width:1280px){
+    
+
+}

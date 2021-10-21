@@ -1,2 +1,1 @@
-# PC Hardware shop
-
+# PC HARDWARE SHOP

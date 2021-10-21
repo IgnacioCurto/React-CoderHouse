@@ -1,8 +1,8 @@
 import React from "react";
+import "./NavBar.css";
 import { CartWidget } from "./CartWidget/CartWidget.js";
 import { UserWidget } from "./UserWidget/UserWidget.js";
 import { WishWidget } from "./WishWidget/WishWidget.js";
-import './NavBar.css'
 import navlogo from "./logo.svg";
 import { Link } from "react-router-dom";
 
@@ -11,12 +11,12 @@ export const NavBar = ({ id }) => {
     <div className="navBar">
       <nav>
         <Link to="/">
-          <img src={navlogo} className="navLogo" width="50rem" alt="logo" />
+          <img src={navlogo} className="navLogo" alt="logo" width="60rem" />
         </Link>
         <div className="navLinks">
           <ul>
-          <li>
-              <Link to={"/"}>Build your Own</Link>
+            <li>
+              <Link to={"/"}>Build your own</Link>
             </li>
             <li>
               <Link to={"/category/hardware"}>Hardware</Link>
