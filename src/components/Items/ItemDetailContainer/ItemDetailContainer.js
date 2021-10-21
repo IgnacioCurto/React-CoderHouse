@@ -3,7 +3,7 @@ import { ItemDetail } from "./ItemDetail/ItemDetail.js";
 import "./ItemDetailContainer.css";
 import { useParams } from "react-router-dom";
 import { Loader } from "../../Loader.js";
-import {dataBase} from "../../../Firebase/firebase.js"
+import { firestore } from "../../../Firebase/firebase.js";
 
 //Cargo las imagenes de los productos
 import geforce1 from '../../img/GeForce.png'
@@ -15,6 +15,7 @@ import mother1 from '../../img/mother1.png'
 import mother2 from '../../img/mother2.jpg'
 import aio1 from '../../img/aio1.jpg'
 import ram1 from '../../img/ram1.png'
+
 
 export const ItemDetailContainer = () => {
   //utilizao useState para registrar y mostrar los cambios en pantalla.
@@ -136,6 +137,7 @@ export const ItemDetailContainer = () => {
     });
   };
 
+
   //utilizo UseEffect para simplificar lo que tengo que hacer
   //primero llamo a la funcion que tiene la promise y utilizo .then para el caso de exito
   //luego al resultado de la promise (mi array de objetos), lo paso
@@ -150,6 +152,34 @@ export const ItemDetailContainer = () => {
     });
   }, []);
 
+    //Necesito la referencia de la db
+    useEffect(() => {
+      const db = firestore;
+  
+      //Necesito la referencia de la collection
+      const collection = db.collection("items");
+  
+      //Hago la consulta (get-where-doc-add)
+      const query = collection.get();
+  
+      query
+        .then((resultado)=>{
+          const documentos = resultado.docs
+  
+          const array_final_de_productos = []
+  
+          documentos.forEach(producto=>{
+            const id = producto.id
+            const el_resto = producto.data()
+            const producto_final = {id, ...el_resto}
+            array_final_de_productos.push(producto_final)
+          })
+        })
+        .catch(error =>{
+          console.log(error)
+        })
+    });
+
   //Para poder mostrar el loader y evaluar si mi objeto estaba inicializado (vacio)
   //al principio de la carga de la pagina, utilice la funcion Object.keys
   //si el valor es 0, o sea que no tiene nada, muestro el loader.
@@ -163,7 +193,8 @@ export const ItemDetailContainer = () => {
     ):(<ItemDetail product={prodById} />)
 	
   }
- </section>
+  </section>
+  
 
 };
 

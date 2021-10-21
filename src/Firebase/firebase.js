@@ -1,16 +1,21 @@
-import firebase from 'firebase/app'
-import 'firebase/firestore'
+// Tengo que traer a firebase
+import firebase from "firebase/app";
 
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyCCpHW75-echfkrPGDs5NuH4gGGG3wS9wU",
-    authDomain: "plantae-etchemendy.firebaseapp.com",
-    projectId: "plantae-etchemendy",
-    storageBucket: "plantae-etchemendy.appspot.com",
-    messagingSenderId: "649535559004",
-    appId: "1:649535559004:web:1cb0ab86f2d532e5b69d99"
-  };
-// Initialize Firebase
-  const fb =firebase.initializeApp(firebaseConfig);
-//disponible para todos
-  export const dataBase = fb.firestore();
+// Tengo que traer el servicio
+import "firebase/firestore";
+
+// Inicializar app
+const firebaseConfig = {
+  apiKey: "AIzaSyB8BqDLNt93zn_N-qZtZqj55l2ZRpw1kEI",
+  authDomain: "pc-shop-coder-curto.firebaseapp.com",
+  projectId: "pc-shop-coder-curto",
+  storageBucket: "pc-shop-coder-curto.appspot.com",
+  messagingSenderId: "989850747430",
+  appId: "1:989850747430:web:c368e91f6f3e47fc679ce7",
+  measurementId: "G-NL58ZLETNW"
+};
+
+const app = firebase.initializeApp(firebaseConfig);
+
+// Export
+export const firestore = firebase.firestore(app);

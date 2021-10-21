@@ -3,7 +3,6 @@ import "./ItemListContainer.css";
 import { ItemList } from "./ItemList/ItemList.js";
 import { useParams } from "react-router-dom";
 import { Loader } from "../../Loader.js";
-import { dataBase } from "../../../Firebase/firebase.js"
 
 //Cargo las imagenes de los productos
 import geforce1 from '../../img/GeForce.png'
