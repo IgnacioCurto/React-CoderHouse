@@ -39,7 +39,7 @@ export const ItemListContainer = () => {
             category: "hardware",
             description:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit." ,
-            price: "$250",
+            price: "$245,999",
           },
           {
             id: "2",
@@ -48,8 +48,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "hardware",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$12,199",
           },
           {
             id: "3",
@@ -58,8 +58,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "hardware",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$83,460",
           },
           {
             id: "4",
@@ -68,8 +68,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "pre-built",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$142,067",
           },
           {
             id: "5",
@@ -78,8 +78,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "hardware",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$309,000",
           },
           {
             id: "6",
@@ -88,8 +88,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "hardware",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$51,529",
           },
           {
             id: "7",
@@ -98,8 +98,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "pre-built",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$286,000",
           },
           {
             id: "8",
@@ -108,8 +108,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "hardware",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$17,999",
           },
           {
             id: "9",
@@ -118,8 +118,8 @@ export const ItemListContainer = () => {
             stock: true,
             category: "hardware",
             description:
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            price: "$250",
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit,",
+            price: "$22,500",
           },
         ]),
         //Simula tiempo de carga (1,5s)
