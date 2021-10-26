@@ -10,19 +10,17 @@ export const Item = ({ item }) => {
   //renderiza los valores que el objeto contiene.
   return (
     <div className="card">
-      <img className="prodImg" src={item.img} alt={item.alt}></img>
+      <img className="prodImg" src={item.img}></img>
       <h3 className="prodTitle">{item.name}</h3>
       <p className="descr">{item.description}</p>
       <div className="pricediv">
         <TagWidget />
-        <p className="price">{item.price}</p>
+        <p className="price">${item.price}</p>
       </div>
       <div className="cardbuttons">
         <Link to={`/item/${item.id}`}><button className="buyItem">See more</button></Link>
         <WishWidget />
       </div>
-
-      
     </div>
   );
 };

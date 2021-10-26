@@ -4,6 +4,9 @@ import { TagWidget } from "../../../NavBar/TagWidget/TagWidget.js";
 import { Link } from "react-router-dom";
 import {ItemCount} from "../../ItemCount/ItemCount.js";
 import {CartContext} from "../../../CartContext.js"
+
+
+
 export const ItemDetail = ({ product }) => {
   //este componente tambien es dummy por lo que recibe
   //solamente el producto ya filtrado por el id
@@ -23,7 +26,7 @@ export const ItemDetail = ({ product }) => {
   }
   return (
     <article className="productDetail">
-      <img className="prodimg" src={product.img} alt={product.alt} />
+      <img className="prodimg" src={product.img}/>
       <div className="prodinfo">
         <Link to={`/category/${product.category}`}>
           <h4>{product.category}</h4>
@@ -44,7 +47,7 @@ export const ItemDetail = ({ product }) => {
             <button className="backButton" onClick={(e) => showEndPurchase(false)}>Back</button>
           </Link>
         </div>
-        ):(<ItemCount currentstock={product.stock} initial={product.min} onAdd={onAdd}/> 
+        ):(<ItemCount currentstock={product.stock} initial={1} onAdd={onAdd}/> 
         )
         }
       </div>
