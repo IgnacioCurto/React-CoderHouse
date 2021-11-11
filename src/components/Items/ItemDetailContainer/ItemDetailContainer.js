@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ItemDetail } from "./ItemDetail/ItemDetail.js";
-import "./ItemDetailContainer.css";
+import "../../../styles.css";
 import { useParams } from "react-router-dom";
-import { Loader } from "../../Loader.js";
+import { Loader } from "../../Loader";
 import { firestore } from "../../../Firebase/firebase.js";
 
 

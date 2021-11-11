@@ -19,3 +19,6 @@ const app = firebase.initializeApp(firebaseConfig);
 
 // Export
 export const firestore = firebase.firestore(app);
+export function getFirestore(){
+  return
+}

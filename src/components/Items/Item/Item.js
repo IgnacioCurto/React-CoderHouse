@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import { WishWidget } from "../../NavBar/WishWidget/WishWidget.js";
 import { TagWidget } from "../../NavBar/TagWidget/TagWidget.js";
 import {Link} from "react-router-dom";
@@ -15,7 +17,7 @@ export const Item = ({ item }) => {
       <p className="descr">{item.description}</p>
       <div className="pricediv">
         <TagWidget />
-        <p className="price">${item.price}</p>
+        <p className="price">${item.price.toLocaleString("en")}</p>
       </div>
       <div className="cardbuttons">
         <Link to={`/item/${item.id}`}><button className="buyItem">See more</button></Link>

@@ -1,5 +1,5 @@
 import { React,useContext,useState } from "react";
-import "./ItemDetail.css";
+import "../../../../styles.css";
 import { TagWidget } from "../../../NavBar/TagWidget/TagWidget.js";
 import { Link } from "react-router-dom";
 import {ItemCount} from "../../ItemCount/ItemCount.js";
@@ -35,7 +35,7 @@ export const ItemDetail = ({ product }) => {
         <p>{product.description}</p>
         <div className="pricediv">
           <TagWidget />
-          <h5>${product.price}</h5>
+          <h5>${product.price.toLocaleString("en")}</h5>
         </div> 
         {endPurchase?(
           <div className="stockContainer">

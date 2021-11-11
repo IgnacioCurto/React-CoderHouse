@@ -1,5 +1,5 @@
 import React, {useContext, useState, useEffect} from 'react';
-import './CartWidget.css';
+import '../../../styles.css';
 import {Badge} from '@material-ui/core';
 import cartIcon from './cartIcon.svg';
 import { CartContext } from '../../CartContext';

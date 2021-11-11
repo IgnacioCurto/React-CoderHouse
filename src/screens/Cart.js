@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../components/CartContext.js";
 import { Link } from "react-router-dom";
-import "./Cart.css";
+import "../styles.css";
 import deleteIcon from "../components/delete.svg";
 
 export const Cart = () => {
@@ -24,7 +24,7 @@ export const Cart = () => {
           <p className="sad">:[</p>
           <h1>Your shopping cart is empty</h1>
           <Link to="/">
-            <button>Back to home</button>
+            <button className="cartButton">Back to home</button>
           </Link>
         </div>
       ) : (
@@ -55,7 +55,7 @@ export const Cart = () => {
             <h2>Subtotal</h2>
             <div className="totalInfo">
               <p>Products: {itemsQty}</p>
-              <p>Total: ${itemsPrice}</p>
+              <p>Total: ${itemsPrice.toLocaleString("en")}</p>
             </div>
             <button>End purchase</button>
           </div>

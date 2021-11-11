@@ -1,5 +1,4 @@
 import React from 'react';
-import './UserWidget.css';
 import userIcon from './userIcon.svg';
 
 export const UserWidget = () => {

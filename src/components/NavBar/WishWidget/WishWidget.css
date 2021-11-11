@@ -1,8 +1,0 @@
-.wishWidget{
-    transition: .2s ease;
-}
-
-.wishWidget:hover{
-    transform: scale(1.07);
-    cursor: pointer;
-}

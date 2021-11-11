@@ -1,6 +1,6 @@
 import React from 'react';
 import { Item } from '../../Item/Item.js';
-import './Itemlist.css';
+import '../../../../styles.css';
 
 export const ItemList=({items}) => {
     //Recibo por props los items filtrados o no a mostrar.
