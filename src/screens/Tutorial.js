@@ -15,13 +15,13 @@ export const Tutorial = ({tutorial}) => {
             
             <main >
                 <section className="steps__right">
-                    <div className="steps__right--container" data-aos="fade-left">
+                    <div className="steps__right--container" >
                         <div className="steps__info">
                             <h2 className="steps__title">Have you ever wondered <span> how </span>a PC is built?</h2>
                             <p>There really isn't much to it, but the thought of building a functioning computer might seem a bit overwhelming...</p>
                             <p>First, you should consider what type of system will suit your needs, do you want a build for playing videogames, rendering, editing, or even streaming? The options are endless  </p>
                         </div>
-                        <img src={'https://ik.imagekit.io/kkfreeqob0t/React_Coder/set-gaming-pc_WLHGdgFcpa.png?updatedAt=1636580651064'} width="700rem"></img>
+                        <img src={'https://ik.imagekit.io/kkfreeqob0t/React_Coder/set-gaming-pc_WLHGdgFcpa.png?updatedAt=1636580651064'} width="700rem" data-aos="fade-left"></img>
                         
                     </div>
                 </section>
@@ -90,6 +90,7 @@ export const Tutorial = ({tutorial}) => {
                         
                     </div>
                 </section>
+                
             </main>
         </>
     )
