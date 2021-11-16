@@ -778,7 +778,8 @@ p {
 
 
 footer{
-  margin-top: 5em
+  margin-top: 5em;
+  bottom: 0;
 }
 .footerWave{
   width: 100%;

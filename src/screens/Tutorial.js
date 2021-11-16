@@ -80,17 +80,52 @@ export const Tutorial = ({tutorial}) => {
                 </section>
                 <section className="steps__left">
                     <div className="steps__left--container" data-aos="fade-right">
-                    <Link to={`/type/PSUs`}><img src={'https://ik.imagekit.io/kkfreeqob0t/React_Coder/psu_EF5IomvIC.png?updatedAt=1636580164737'}></img></Link>
+                    <Link to={`/type/PSUs`}><img src={'https://ik.imagekit.io/kkfreeqob0t/React_Coder/psu_EF5IomvIC.png?updatedAt=1636580164737'} width="600rem"></img></Link>
                         <div className="steps__info">
-                        <h3 className="steps__num">6.</h3>
-                            <h2 className="steps__title">Have you ever wondered <span> how </span>a PC is built?</h2>
-                            <h3 className="steps__subtitle">And what about that helicopter looking thing?</h3>
-                            <p>We are thrilled to see that you've taken this much interest in the basics of building a pc</p>
+                        <h3 className="steps__num">5.</h3>
+                            <h2 className="steps__title">How do I <span> power </span>this thing?</h2>
+                            <h3 className="steps__subtitle">You're gonna need a bigger boat.</h3>
+                            <p>The desktop computer power supply converts the alternating current (AC) from a wall socket of mains electricity to a low-voltage direct current (DC) to operate the motherboard, processor and peripheral devices.</p>
                         </div>
                         
                     </div>
                 </section>
-                
+                <section className="steps__right">
+                    <div className="steps__right--container" data-aos="fade-left">
+                        <div className="steps__info">
+                        <h3 className="steps__num">6.</h3>
+                            <h2 className="steps__title">Where all your files are <span> stored </span></h2>
+                            <h3 className="steps__subtitle">Storage Units. </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.</p>
+                        </div>
+                        <Link to={`/type/storage`}><img src={'https://ik.imagekit.io/kkfreeqob0t/React_Coder/ultra-3d-sata-iii-ssd-left.png.thumb.1280.1280_caG8I7fmM.png?updatedAt=1636811294950'} width="600rem"></img></Link>
+                        
+                    </div>
+                </section>
+                <section className="steps__left">
+                    <div className="steps__left--container" data-aos="fade-right">
+                    <Link to={`/type/coolers`}><img src={'https://ik.imagekit.io/kkfreeqob0t/React_Coder/H81acf1f065d74bfab0a7e35b61e091cdI_TAd37rffF.png?updatedAt=1636811296650'} width="600rem"></img></Link>
+                        <div className="steps__info">
+                        <h3 className="steps__num">7.</h3>
+                            <h2 className="steps__title">Keep it <span> cool </span></h2>
+                            <h3 className="steps__subtitle">(Pun intended)</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.</p>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section className="steps__right">
+                    <div className="steps__right--container" data-aos="fade-left">
+                        <div className="steps__info">
+                        <h3 className="steps__num">8.</h3>
+                            <h2 className="steps__title">Where <span> can I put </span>this? </h2>
+                            <h3 className="steps__subtitle">The final step. </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sodales tincidunt eros, sed egestas purus. Ut finibus nec diam eget interdum. Ut sit amet nibh fermentum, pulvinar tellus ut, tincidunt.</p>
+                        </div>
+                        <Link to={`/type/cases`}><img src={'https://ik.imagekit.io/kkfreeqob0t/React_Coder/rgb-black-glass_7NmleewxS.png?updatedAt=1636813022737'} width="600rem"></img></Link>
+                        
+                    </div>
+                </section>
             </main>
         </>
     )

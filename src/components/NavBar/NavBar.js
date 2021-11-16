@@ -27,8 +27,10 @@ export const NavBar = ({ id }) => {
                 <Link to={"/type/motherboards"}><li>Motherboards</li></Link>
                 <Link to={"/type/GPUs"}><li>Graphics cards</li></Link>
                 <Link to={"/type/RAMs"}><li>RAMs</li></Link>
+                <Link to={"/type/storage"}><li>Storage</li></Link>
                 <Link to={"/type/coolers"}><li>Coolers</li></Link>
                 <Link to={"/type/PSUs"}><li>Power Supplies</li></Link>
+                <Link to={"/type/cases"}><li>Cases</li></Link>
               </ul>
             </li>
             <li>
