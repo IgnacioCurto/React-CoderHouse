@@ -27,7 +27,7 @@ export const Cart = () => {
         <p className="smiley">:(</p>
         <h1>Your shopping cart is empty</h1>
         <Link to="/">
-          <button className="cartButton">Back to home</button>
+          <button className="cartButton">Go back home</button>
         </Link>
       </div>
       ) : (
@@ -38,7 +38,7 @@ export const Cart = () => {
           </div>
           
           <div className="cartTotal">
-            <h2>Total</h2>
+            <h2>Summary</h2>
             <div className="totalInfo">
               <p>Products: {itemsQty}</p>
               <p>Total: ${itemsPrice.toLocaleString("en")}</p>

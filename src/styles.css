@@ -710,6 +710,9 @@ p {
   text-align: center;
   font-size: 24px;
 }
+.steps__num p span{
+  color: #ff8037;
+}
 .steps__right {
   display: flex;
   justify-content: end;
@@ -727,6 +730,9 @@ p {
 .steps__left--container {
   display: flex;
   justify-content: space-around;
+}
+.steps__left--container a{
+  margin-top: auto;
 }
 .steps__info {
   width: 50%;

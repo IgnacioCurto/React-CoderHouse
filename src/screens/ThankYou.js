@@ -10,9 +10,9 @@ export const ThankYou = () => {
     <div className="emptyCart">
       <p className="smiley">:)</p>
       <h1>Thank you for your purchase!</h1>
-      <h3>Your order tracking code is <span>{orderId}</span>, you'll receive a confirmation e-mail to your account's adress</h3>
+      <h3>Your order tracking code is <span>{orderId}</span>, you'll receive a confirmation e-mail to your account's adress!</h3>
       <Link to="/">
-        <button className="cartButton">Back to home</button>
+        <button className="cartButton">Go back home</button>
       </Link>
     </div>
   )

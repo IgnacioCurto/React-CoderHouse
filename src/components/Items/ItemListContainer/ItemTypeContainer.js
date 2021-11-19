@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { firestore } from "../../../Firebase/firebase.js";
 import { getFirestore } from "../../../Firebase/firebase.js";
 import { Loader } from "../../Loader";
+import {item} from "../Item/Item"
 
 export const ItemTypeContainer = () => {
   const { id } = useParams();
@@ -41,14 +42,8 @@ export const ItemTypeContainer = () => {
       <div className="itemListContainer">
         <section>
           <h1>
-            Your <span>custom</span> PC
+            Our <span>stock</span>:
           </h1>
-          <p>
-            Either you'll go on adventures in your favorite videogame, work or render
-            beautiful art pieces,
-            <br></br> a <span>custom made</span> build will suit your everyday
-            needs.
-          </p>
         </section>
         {items.length > 0 ? (
           <ItemList items={items} />
