@@ -6,6 +6,7 @@ https://pc-shop-coder-curto.web.app/
 
 # Demo
 Este GIF demuestra el proceso de compra de un usuario, desde que se eligen los productos hasta que se confirma la solicitud de compra:
+
 ![Shop demo](https://user-images.githubusercontent.com/81186145/142066922-617bccc3-c52b-466f-932f-4d6e6f7082de.gif)
 
 # Firebase
